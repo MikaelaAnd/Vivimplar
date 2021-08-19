@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+/* ÅTERANVÄNDBARA KLASSER */
+.flex {
+    display: flex;
+}
+.column {
+    flex-direction: column;
+}
+.row {
+    flex-direction: row;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.between {
+    justify-content: space-between;
+}
+.top {
+    margin-top: 2rem;
+}
+.bottom {
+    margin-bottom: 2rem;
+}
+.left {
+    margin-left: 2rem;
+}
+.right {
+    margin-right: 2rem;
+}
+p {
+    margin: 0;
+}
+
+hr {
+    background-color: #6d6876;
+    width: 780px;
+    height: 3px;
+    border: none;
+    margin: 0;
+}
+
+nav {
+    background-color: #e6989b;
+    color: white;
+}
+
+.material-icons.md-48 { 
+    font-size: 48px; 
+    color: #6d6876;
+    margin: 0 10rem;
+}
