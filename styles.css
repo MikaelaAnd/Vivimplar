@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
-    box-sizing: border-box;
 }
 
 /* ÅTERANVÄNDBARA KLASSER */
@@ -24,6 +23,9 @@ body {
 }
 .between {
     justify-content: space-between;
+}
+.wrap {
+    flex-wrap: wrap;
 }
 .top {
     margin-top: 2rem;
@@ -55,16 +57,25 @@ hr {
 nav {
     background-color: #e6989b;
     color: white;
+    background-attachment: fixed;
 }
 
 .material-icons.md-48 { 
     font-size: 48px; 
     color: #6d6876;
-    margin: 0 10rem;
+    margin: 0 7rem;
 }
 .material-icons.md-36 { 
     font-size: 36px; 
     color: #6d6876;
+}
+
+.menue {
+    display: none;
+}
+
+.Parislogo {
+    width: 11rem;
 }
 
 h1 {
@@ -83,7 +94,138 @@ h2 {
 
 img:hover, span:hover {
     cursor: pointer;
-
 }
 
+.Riologo {
+    width: 18rem;
+}
 
+@media only screen and (max-width: 1024px) {
+
+    .slide {
+        width: 45rem;
+    }
+
+    h2 {
+        margin: 1rem 4rem;
+    }
+
+    .Riologo {
+        width: 13rem;
+    }
+
+    .menue {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .slide {
+        width: 35rem;
+    }
+
+    hr {
+        width: 410px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 1rem 2rem;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .menue {
+        display: flex;
+    }
+
+    .product {
+        width: 14rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .Parislogo {
+        width: 10rem;
+    }
+    
+    .slide {
+        width: 25rem;
+    }
+
+    .material-icons.md-48 {
+        margin: 0 2rem;
+    }
+
+    .product {
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    .material-icons.md-48 { 
+        font-size: 33px; 
+        margin: 0 2rem;
+    }
+
+    .material-icons.md-36 { 
+        font-size: 20px; 
+    }
+    
+    .Parislogo {
+        width: 7rem;
+    }
+
+    .slide {
+        width: 18rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin: 1rem .5rem;
+    }
+
+    p {
+        font-size: .7rem;
+    }
+
+    hr {
+        width: 320px;
+    }
+
+    .Riologo {
+        width: 10rem;
+    }
+    
+}
+
+@media only screen and (max-width: 324px) {
+    .Parislogo {
+        width: 5rem;
+    }
+  .slide {
+      width: 12rem;
+  }  
+
+  hr {
+      width: 200px;
+  }
+
+  .product {
+      width: 10rem;
+  }
+
+  .Riologo {
+      width: 9rem;
+  }
+}
