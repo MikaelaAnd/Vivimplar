@@ -19,6 +19,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+.align {
+    text-align: center;
+}
 .between {
     justify-content: space-between;
 }
@@ -36,15 +39,18 @@ body {
 }
 p {
     margin: 0;
+    font-size: 12pt;
 }
-
 hr {
     background-color: #6d6876;
     width: 780px;
-    height: 3px;
+    height: 2px;
     border: none;
-    margin: 0;
+    margin: 1rem 0rem;
 }
+
+
+/* KLASSER */
 
 nav {
     background-color: #e6989b;
@@ -56,3 +62,28 @@ nav {
     color: #6d6876;
     margin: 0 10rem;
 }
+.material-icons.md-36 { 
+    font-size: 36px; 
+    color: #6d6876;
+}
+
+h1 {
+    color: #6d6876;
+    font-size: 4rem;
+    font-style: normal;
+    margin: 0;
+}
+
+h2 {
+    color: #6d6876;
+    font-size: 2rem;
+    font-style: normal;
+    margin: 1rem 6rem;
+}
+
+img:hover, span:hover {
+    cursor: pointer;
+
+}
+
+
