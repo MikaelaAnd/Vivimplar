@@ -4,7 +4,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* ÅTERANVÄNDBARA KLASSER */
+/* ELEMENT  */
 .flex {
     display: flex;
 }
@@ -52,13 +52,32 @@ hr {
 }
 
 
-/* KLASSER */
 
 nav {
     background-color: #e6989b;
     color: white;
     background-attachment: fixed;
 }
+
+img:hover, span:hover {
+    cursor: pointer;
+}
+
+h1 {
+    color: #6d6876;
+    font-size: 4rem;
+    font-style: normal;
+    margin: 0;
+}
+
+h2 {
+    color: #6d6876;
+    font-size: 2rem;
+    font-style: normal;
+    margin: 1rem 6rem;
+}
+
+/* KLASSER */
 
 .material-icons.md-48 { 
     font-size: 48px; 
@@ -78,30 +97,15 @@ nav {
     width: 11rem;
 }
 
-h1 {
-    color: #6d6876;
-    font-size: 4rem;
-    font-style: normal;
-    margin: 0;
-}
-
-h2 {
-    color: #6d6876;
-    font-size: 2rem;
-    font-style: normal;
-    margin: 1rem 6rem;
-}
-
-img:hover, span:hover {
-    cursor: pointer;
+.product {
+    width: 19rem;
 }
 
 .Riologo {
-    width: 18rem;
+    width: 16rem;
 }
 
 @media only screen and (max-width: 1024px) {
-
     .slide {
         width: 45rem;
     }
@@ -164,7 +168,14 @@ img:hover, span:hover {
     }
 
     .product {
-        width: 15rem;
+        width: 13rem;
+        padding: 0 8rem;
+    }
+
+    .footer-details {
+        display: flex;
+        flex-direction: column;
+
     }
 }
 
@@ -190,13 +201,19 @@ img:hover, span:hover {
         font-size: 2rem;
     }
 
+    .product {
+        width: 10rem;
+        padding: 5rem;
+    }
+
     h2 {
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin: 1rem .5rem;
     }
 
     p {
-        font-size: .7rem;
+        font-size: .8rem;
+        margin: 0 1rem;
     }
 
     hr {
@@ -209,23 +226,23 @@ img:hover, span:hover {
     
 }
 
-@media only screen and (max-width: 324px) {
+@media only screen and (max-width: 326px) {
     .Parislogo {
         width: 5rem;
     }
-  .slide {
-      width: 12rem;
-  }  
+    .slide {
+        width: 12rem;
+    }  
 
-  hr {
-      width: 200px;
-  }
+    hr {
+        width: 200px;
+    }
 
-  .product {
-      width: 10rem;
-  }
+    .product {
+        width: 10rem;
+    }
 
-  .Riologo {
-      width: 9rem;
-  }
+    .Riologo {
+        width: 9rem;
+    }
 }
